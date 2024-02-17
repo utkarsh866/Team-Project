@@ -186,3 +186,87 @@ li{
     font-size: 1rem;
   }
 }
+
+.section1 {
+    background: linear-gradient(45deg,blue, white, skyblue, blue,white, skyblue);
+    background-size: 500% 500%;
+    animation: color 6s ease-in infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px;
+    width: 50%; 
+    margin: 10rem auto 0 auto;
+    color: skyblue;
+    border: 0.5px solid black;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.section1 img {
+    height: 200px;
+}
+
+.section1-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.section1 h1 {
+    color: greenyellow;
+    margin: 0;
+}
+
+.section1 p {
+    color: black;
+    padding: 0px 50px 0px 50px;
+}
+
+.box {
+    background: linear-gradient(to bottom, rgba(255, 111, 0, 0.941), white);
+    color: whitesmoke;
+    border: 0.5px solid black;
+    width: 50%; 
+    height: 60%;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto auto auto; 
+}
+
+.btns {
+    
+    margin: auto;
+    border-radius: 30px;
+    padding: 12px 25px;
+    transition: transform 0.3s ease;
+}
+
+.btns button:active,
+.btns button:focus {
+    background-color: navy; 
+}
+
+.btns button{
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px solid white;
+}
+
+@media (max-width: 768px) {
+    .section1 {
+        width: 80%; 
+    }
+
+    .box {
+        width: 90%;
+        max-width: 100%; 
+    }
+}
