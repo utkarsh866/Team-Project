@@ -13,6 +13,7 @@
 <body>
     <div class="container">
         <aside class="side-content">
+            <a class="back-link" href="/"><i class="fa-solid fa-arrow-left"></i></a>
             <div class="contact-photo">
                 <img src="../media//contact.png" alt="contact">
             </div>
@@ -35,26 +36,26 @@
             </ul>
         </aside>
         <main>
-            <form action="/" method="post">
+            <form id="contact-form">
                 <section class="name-section">
-                    <div class="fist-name">
+                    <div class="fist-name-div">
                         <label for="first-name">First name</label>
                         <input type="text" id="first-name" name="first-name" placeholder="your first name"
                             required="true">
                     </div>
-                    <div class="last-name">
+                    <div class="last-name-div">
                         <label for="last-name">Last name</label>
                         <input type="text" id="last-name" name="last-name" placeholder="your last name" required="true">
                     </div>
                 </section>
                 <section class="contact-section">
-                    <div class="email">
+                    <div class="email-div">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="true">
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" required="true">
                     </div>
-                    <div class="phone">
+                    <div class="phone-div">
                         <label for="phone">Phone</label>
-                        <input type="text" id="Phone" name="phone" placeholder="+91 xxx xxx xxxx" required="true">
+                        <input type="text" id="phone" name="phone" placeholder="xxx xxx xxxx" required="true">
                     </div>
                 </section>
                 <section class="message-section">
@@ -62,11 +63,12 @@
                     <textarea id="message" name="message" rows="5" cols="33" placeholder="enter your message"
                         required="true"></textarea>
                 </section>
+                <p id="error-info"></p>
                 <button class="send-button">send message</button>
             </form>
         </main>
     </div>
-
+    <script src="./contact.js" defer></script>
 </body>
 
 </html>
