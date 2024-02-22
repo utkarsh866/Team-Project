@@ -33,102 +33,105 @@ nav {
 
 /* elevate learning exp css and join now css */
 .section1 {
-    background: linear-gradient(45deg,blue, white, skyblue, blue,white, skyblue);
-    background-size: 500% 500%;
-    animation: color 6s ease-in infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 40px;
-    width: 50%; 
-    margin: 10rem auto 0 auto;
-    color: skyblue;
-    border: 0.5px solid black;
+  background: linear-gradient(
+    45deg,
+    blue,
+    white,
+    skyblue,
+    blue,
+    white,
+    skyblue
+  );
+  background-size: 500% 500%;
+  animation: color 6s ease-in infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 50%;
+  margin: 10rem auto 0 auto;
+  color: skyblue;
+  border: 0.5px solid black;
 }
 
 @keyframes color {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 .section1 img {
-    height: 200px;
+  height: 200px;
 }
 
 .section1-text {
-    flex: 1;
-    margin-left: 20px;
+  flex: 1;
+  margin-left: 20px;
 }
 
 .section1 h1 {
-    color: greenyellow;
-    margin: 0;
+  color: greenyellow;
+  margin: 0;
 }
 
 .section1 p {
-    color: black;
-    padding: 0px 50px 0px 50px;
+  color: black;
+  padding: 0px 50px 0px 50px;
 }
 
 .box {
-    background: linear-gradient(to bottom, rgba(255, 111, 0, 0.941), white);
-    color: whitesmoke;
-    border: 0.5px solid black;
-    width: 50%; 
-    height: 60%;
-    text-align: center;
-    padding: 40px;
-    margin: 0 auto auto auto; 
+  background: linear-gradient(to bottom, rgba(255, 111, 0, 0.941), white);
+  color: whitesmoke;
+  border: 0.5px solid black;
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto auto auto;
 }
 
 .btns {
-    
-    margin: auto;
-    border-radius: 30px;
-    padding: 12px 25px;
-    transition: transform 0.3s ease;
+  margin: auto;
+  border-radius: 30px;
+  padding: 12px 25px;
+  transition: transform 0.3s ease;
 }
 
 .btns button:active,
 .btns button:focus {
-    background-color: navy; 
+  background-color: navy;
 }
 
-.btns button{
-    background-color: blue;
-    color: white;
-    font-size: 15px;
-    border-radius: 2px solid white;
+.btns button {
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  border-radius: 2px solid white;
 }
 
 @media (max-width: 768px) {
-    .section1 {
-        width: 80%; 
-    }
+  .section1 {
+    width: 80%;
+  }
 
-    .box {
-        width: 90%;
-        max-width: 100%; 
-        padding: 20px;
+  .box {
+    width: 90%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .section1-text {
+    margin-left: 10px;
+  }
 
-    }
-    .section1-text{
-        margin-left: 10px;
-    }
-
-    .section1 img{
-        height: 150px;
-    }
-
+  .section1 img {
+    height: 150px;
+  }
 }
 
-
 /* Ends here elevate learning exp css and join now css */
-
 
 li {
   list-style: none;
@@ -287,111 +290,105 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  max-width: 1170px;
-  margin: auto;
+.Contact {
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-btn {
+  border-radius: 10px;
+  height: 26px;
+  background-color: black;
+  color: white;
+  width: 90px;
+  cursor: pointer;
+}
+#contact-btn:hover {
+  background-color: crimson;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  justify-content: space-around;
+  gap: 20px;
 }
-ul {
-  list-style: none;
+.row div {
+  margin-top: 20px;
+}
+
+li {
+  margin-top: 5px;
+}
+li::marker {
+  color: white;
+}
+li a {
+  text-decoration: none;
+  color: white;
 }
 .footer {
   background-color: #28c2f3;
-  padding: 70px 0;
 }
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
+.social-links {
+  display: flex;
+  gap: 21px;
+  margin-top: 20px;
 }
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 15px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col:last-child {
-  margin-left: 180px;
-}
-.footer-col ul li a:hover {
-  color: yellow;
-  padding-left: 8px;
-}
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: white;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover {
-  background-color: palevioletred;
-}
-a {
-}
-/*responsive*/
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-  .footer-col:last-child {
-    margin-left: 1px;
-  }
-  .skill {
-    padding-top: -40px;
-  }
-}
-@media (max-width: 500px) {
-  .footer-col {
-    width: 100%;
-  }
-}
-
-@media (max-width: 864px) and (min-width: 768px) {
-  .skill {
-    margin-top: 62px;
-  }
-}
-
 #last {
-  text-align: center;
-  margin-top: 60px;
   color: white;
-  font-size: 23px;
+  text-align: center;
+  margin-top: 32px;
+  padding-bottom: 10px;
+}
+li a:hover {
+  color: yellow;
+}
+
+@media only screen and (max-width: 631px) {
+  .got {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12px;
+  }
+  .Contact {
+    display: block;
+  }
+  .btndiv {
+    display: block;
+    width: 100px;
+    margin: auto auto 30px auto;
+  }
+  #contact-btn {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row div {
+    margin-left: 30px;
+  }
+  .footer-col div {
+    display: flex;
+    gap: 21px;
+    margin-left: 0px;
+  }
+  li a {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
+
+i:hover {
+  background-color: palevioletred;
 }
 
 /*         Footer  CSS End Here      */
