@@ -5,6 +5,10 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const message = document.getElementById("message");
 const errorInfo = document.getElementById("error-info");
+const navBar = document.querySelector(".nav-bar");
+const hambar = document.querySelector(".hambar");
+const cross = document.querySelector(".cross");
+const overlay = document.querySelector(".overlay");
 
 const emailRegx = /^([a-zA-Z0-9\._]+)@([a-zA-Z]+)\.([a-z]+)(\.[a-z]+)?$/;
 const nameRegx = /^([A-Za-z0-9]){2,}$/;
@@ -38,4 +42,18 @@ form.addEventListener("submit", (e) => {
         return;
     }
     confirm("form submited");
+});
+
+hambar.addEventListener("click", () => {
+    navBar.classList.add("nav-active");
+    overlay.style.display = "block";
+    document.documentElement.style.overflow = "hidden";
+});
+
+cross.addEventListener("click", () => {
+    if (navBar.classList.contains("nav-active")) {
+        navBar.classList.remove("nav-active");
+        overlay.style.display = "none";
+        document.documentElement.style.overflow = "auto";
+    }
 });

@@ -5,21 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../media/Skill lemma logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./contact.css">
     <script src="https://kit.fontawesome.com/c485021909.js" async crossorigin="anonymous"></script>
     <title>Skill-Lemma</title>
 </head>
 
 <body>
-    <div class="container">
+    <header class="header ">
+        <div class="logo">
+            <a href="/">LOGO</a>
+        </div>
+        <nav class="nav-bar">
+            <div class="cross">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item active-link"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <section class="profile-section">
+            <i class="fa-solid fa-user"></i>
+            <span class="profile-name">name</span>
+        </section>
+        <div class="hambar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="main-container">
         <aside class="side-content">
-            <a class="back-link" href="/"><i class="fa-solid fa-arrow-left"></i></a>
             <div class="contact-photo">
                 <img src="../media//contact.png" alt="contact">
             </div>
             <header class="title">Contact <span>Us</span></span>
             </header>
-            <h3 class="subtitle">Personalized Support and Assistance</h3>
+            <h3 class="subtitle">Today for Personalized Support and Assistance</h3>
             <ul class="company-info">
                 <li>
                     <i class="fa-solid fa-phone"></i>
@@ -39,27 +66,27 @@
             <form id="contact-form">
                 <section class="name-section">
                     <div class="fist-name-div">
-                        <label for="first-name">First name</label>
+                        <label for="first-name">First name: </label>
                         <input type="text" id="first-name" name="first-name" placeholder="your first name"
                             required="true">
                     </div>
                     <div class="last-name-div">
-                        <label for="last-name">Last name</label>
+                        <label for="last-name">Last name:</label>
                         <input type="text" id="last-name" name="last-name" placeholder="your last name" required="true">
                     </div>
                 </section>
                 <section class="contact-section">
                     <div class="email-div">
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="text" id="email" name="email" placeholder="example@gmail.com" required="true">
                     </div>
                     <div class="phone-div">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder="xxx xxx xxxx" required="true">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" placeholder="your phone no" required="true">
                     </div>
                 </section>
                 <section class="message-section">
-                    <label for="message">Message</label>
+                    <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" cols="33" placeholder="enter your message"
                         required="true"></textarea>
                 </section>
@@ -68,6 +95,7 @@
             </form>
         </main>
     </div>
+    <div class="overlay"></div>
     <script src="./contact.js" defer></script>
 </body>
 
