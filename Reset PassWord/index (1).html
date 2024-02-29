@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./Images/Skill lemma logo.png"
+            type="image/x-icon"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./reset-password.css" />
+        <script
+            src="https://kit.fontawesome.com/c485021909.js"
+            async
+            crossorigin="anonymous"
+        ></script>
+        <title>Reset Password</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="/">LOGO</a>
+            </div>
+            <nav class="nav-bar">
+                <div class="cross">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item active-link">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="nav-item"><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <section class="profile-section">
+                <i class="fa-solid fa-user"></i>
+                <span class="profile-name">name</span>
+            </section>
+            <div class="hambar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <main class="container">
+            <section class="from-section">
+                <a href="#" class="back-btn"
+                    ><i class="fa-solid fa-arrow-left"></i> back to login</a
+                >
+                <div class="info-text">
+                    <h1 class="reset-title">Reset your password?</h1>
+                    <p class="reset-subtitle">
+                        Don't worry, happens to all of us. Enter your email
+                        below to recover your password
+                    </p>
+                </div>
+                <form>
+                    <div class="input-field">
+                        <label for="email-field" class="email-label">
+                            Your Email
+                        </label>
+                        <input
+                            type="text"
+                            name="email"
+                            id="email-field"
+                            required="true"
+                            placeholder="enter your email"
+                        />
+                    </div>
+                    <p id="error-elm"></p>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+            <div class="image-div">
+                <img class="image" src="./Images/image-1.png" alt="img" />
+            </div>
+        </main>
+        <div class="overlay"></div>
+        <script src="responsive.js"></script>
+    </body>
+</html>
