@@ -1,1 +1,327 @@
-
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+  }
+  
+  .logindivider {
+    border-left: 1px solid #000;
+    height: 460px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+  }
+  
+  .LoginbuttonCss {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f57d0d;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  
+  .logincontainer {
+    background-color: #00a1b9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .subdivlogincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  
+  .loginroot {
+    display: flex;
+    width: 1240px;
+    height: 500px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .leftdiv {
+    width: 581px;
+    height: 400px;
+    padding: 20px;
+  }
+  
+  .rightdiv {
+    width: 581px;
+    height: 657px;
+    padding: 20px 10px 20px 10px;
+  }
+  
+  
+ 
+  
+  .resetPasswordCss {
+    margin-top: 10px;
+    margin-left: 110px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: #cd4d4d;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  
+  .newUserCss {
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .welcomeCss {
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+    font-family: Poppins;
+    text-transform: uppercase;
+  }
+  
+  .youremailCss {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: Inter;
+  }
+  .yourpasswordCss {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: Inter;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .loginroot {
+      display: flex;
+      width: 400px;
+      height: 500px;
+    }
+  
+    .leftdiv {
+      width: 0px;
+      height: 0px;
+      padding: 0px;
+    }
+  
+    .logindivider {
+      height: 0px;
+    }
+  
+    .rightdiv {
+      width: 500px;
+      height: 657px;
+      padding: 20px;
+    }
+  
+    .leftdiv img {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .loginroot {
+      display: flex;
+      width: 400px;
+      height: 500px;
+    }
+  
+    .leftdiv {
+      width: 0px;
+      height: 0px;
+      padding: 0px;
+    }
+  
+    .logindivider {
+      height: 0px;
+    }
+  
+    .rightdiv {
+      width: 400px;
+      height: 657px;
+      padding: 20px;
+    }
+  
+    .leftdiv img {
+      display: none;
+    }
+  }
+  
+ 
+  
+  @media (min-width: 1101px) and (max-width: 1107px) {
+    .loginroot {
+      margin-left: 20px;
+      width: 1000px;
+      height: 500px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .loginroot {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: 500px;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .leftdiv {
+      width: 0px;
+      height: 0px;
+      padding: 0px;
+    }
+  
+    .logindivider {
+      height: 0px;
+    }
+  
+    .rightdiv {
+      width: 300px;
+      height: 657px;
+      padding: 0px;
+    }
+    .resetPasswordCss {
+      margin-top: 10px;
+      margin-left: 50px;
+      font-family: Poppins;
+      font-size: 20px;
+      color: #cd4d4d;
+      text-transform: capitalize;
+      text-align: right;
+    }
+    .LoginbuttonCss {
+      width: 260px;
+      height: 40px;
+    }
+  
+    .newUserCss {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .welcomeCss {
+      margin-top: 10px;
+    }
+  
+   
+  
+  }
+  
+  @media (min-width: 360px) and (max-width: 390px) {
+    .loginroot {
+      width: 340px;
+      height: 500px;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .resetPasswordCss {
+      margin-left: 50px;
+    }
+  
+    .LoginbuttonCss {
+      width: 260px;
+      height: 40px;
+    }
+  
+    .newUserCss {
+      font-size: 16px;
+      margin-right: 0px;
+    }
+  
+   
+  }
+  
+  @media screen and (width: 414px) {
+   
+    .youremailCss {
+      margin-top: 10px;
+    }
+    .yourpasswordCss {
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (width: 280px) {
+  
+    .loginroot {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .rightdiv {
+      width: 200px;
+      height: 500px;
+      padding: 0px 0px 0px 0px;
+    }
+    .leftdiv {
+      padding: 0px;
+    }
+    .resetPasswordCss {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+  
+    .LoginbuttonCss {
+      width: 170px;
+      height: 40px;
+    }
+    .newUserCss {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  
+    
+  
+    
+    .youremailCss {
+      margin-top: 10px;
+    }
+    .yourpasswordCss {
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (width: 1024px) {
+    .loginroot {
+      width: 400px;
+      height: 450px;
+      border-radius: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  /* ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   li{
+      display:inline;
+      
+   } */
+  
