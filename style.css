@@ -392,3 +392,51 @@ i:hover {
 }
 
 /*         Footer  CSS End Here      */
+
+
+/* earth image */
+
+.home {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+img {
+    height: 85vh;
+    width: 98vw;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        font-size: 1.5em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    img {
+        height: 85vh;
+        width: 98vw;
+    }
+}
+
