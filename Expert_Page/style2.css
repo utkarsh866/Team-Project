@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.nav {
+  height: 90px;
+  background-color: #00a1b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo p {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items p {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+/* Responsive Navbar Button */
+.nav-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+  
+  /* Expert info */
+  .Expert-guidance {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Expert-guidance .img img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .Expert-guidance .info {
+    padding-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .Expert-guidance .info button {
+    height: 40px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: orange;
+  }
+
+
+  /* Expert Guidance */
+.second-sec {
+  height: auto;
+  background-color: #00a1b9;
+   padding-left: 60px; 
+}
+    .second-sec .image {
+      text-align: center;
+      padding-top: 12px;
+    }
+    
+    .second-sec .msg {
+      text-align: center;
+      text-transform: capitalize;
+      color: white;
+      padding-bottom: 5px;
+    }
+
+
+
+
+
+  /* Question section */
+  .Questions-sec {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .Questions-sec i {
+    padding-top: 40px;
+    width: 50px;
+    font-size: 150px;
+    font-weight: 900;
+    padding-left: 5px;
+    color: orange;
+  }
+  
+  .question1-2,
+  .question3-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    margin: 10px;
+    height: 60px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 240px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer1 {
+    padding: 1rem;
+    background-color: #00a1b9;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .footer1 ul {
+    min-width: 200px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px;
+  }
+  
+  .follow i {
+    font-size: 25px;
+  }
+  
+  .rights {
+    background-color: #00a1b9;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .loginOption-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #00a1b9;
+    }
+  
+    .nav-items.show {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+
+
+
+
+
+
+    
+    .Expert-guidance .img img {
+      padding-left: 0;
+    }
+    .Expert-guidance .info {
+      padding-right: 0;
+      text-align: center;
+    }
+    .second-sec .image {
+      text-align: center;
+      padding-top: 12px;
+    }
+    
+    .second-sec .msg {
+      text-align: center;
+      text-transform: capitalize;
+      color: white;
+      padding-bottom: 5px;
+    }
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+      width: 240px;
+      text-align: center;
+    }
+  }
+    
+
+
+ 

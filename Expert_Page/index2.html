@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+  />
+    <link rel="stylesheet" href="style2.css">
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="./logo2.png" alt="">
+            <p>Logo</p>
+        </div>
+        <div class="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="nav-items">
+            <div class="home">
+                <i class='bx bx-home'></i>
+                <p>Home</p>
+            </div>
+            <div class="contact">
+                <i class='bx bxs-phone-call'></i>
+                <p>Contact Us</p>
+            </div>
+            <p>Services</p>
+        </div>
+    </div>
+
+    
+    <script>
+        // JavaScript to toggle nav items on mobile and tablet
+        const navToggle = document.querySelector('.nav-toggle');
+        const navItems = document.querySelector('.nav-items');
+        navToggle.addEventListener('click', () => {
+            navItems.classList.toggle('show');
+        });
+    </script>
+
+
+    
+    <!-- Expert Guidance 1 -->
+    <div class="Expert-guidance">
+        <div class="img">
+            <img src="./expert.png" alt="">
+        </div>
+       <div class="info">
+        <h1>Unlock Expert  <br>guidance at your <br> fingertips!
+        </h1>
+        <br>
+        <button>Create Account</button>
+       </div>
+       
+    </div>
+
+    <!-- Expert Guidance2 -->
+    <div class="second-sec">
+      <div class="image">
+        <img src="./handimg.png" alt="">
+      </div>
+      <div class="msg">
+        <h3>unlock success:follow our expert guidance, <br><h1>Step by Step</h1></h3>
+      </div>
+       
+    </div>
+  </div>
+    <br>
+    <!-- Questions Sections -->
+    <center>
+    <div class="Questions-sec">
+      <!-- <center> -->
+        <div class="heading">
+            <h1>Frequently asked questions</h1>
+        </div>
+        <br>
+      </center>
+        <div class="question1-2">
+        <div class="box1"> Am I required to pay a fee when startinh my application ?</div>
+
+        <div class="box2">What are the available subject that i can <br>apply for?</div>
+    </div>
+   
+    <div class="question3-4">
+        <div class="box3">Which educational document am i supposed <br> to upload?</div>
+        <div class="box4">My application was unsuccessful.what could be the reason?</div>
+        
+    </div>
+    </div>
+    <center>
+    <div class="img">
+      <img src="./quesign.png" alt="">
+  </div></center>
+  </center>
+  <!-- Footer -->
+    <div class="footer1">
+        <div class="first-li">
+        <ul type="none">
+          <li>customer services</li>
+          <li>give us feedback</li>
+          <li>manage subscription</li>
+        </ul>
+      </div>
+      <div class="second-li">
+        <ul type="none">
+          <li>About company</li>
+          <li>about skill lemma</li>
+          <li>site map</li>
+        
+        </ul>
+      </div>
+      <div class="follow">
+        <h3>Follow Us On</h3><br>
+        <i class='bx bxl-instagram' ></i>
+        <i class='bx bxl-facebook-circle'></i>
+      
+      </div>
+      
+    </div>
+      <div class="rights">
+        <h3>@2024 skill lemma all rights reserved</h3>
+      </div>
+    
+</body>
+</html>
