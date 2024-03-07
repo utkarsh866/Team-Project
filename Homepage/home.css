@@ -1,0 +1,226 @@
+:root {
+    --bg-color: white;
+    --text-color: #352f44;
+    --theme-color: rgb(243, 96, 17);
+    --theme-alter-color: #00a1b9;
+    --image-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    padding-inline: 8rem;
+    padding-block: 1rem;
+    margin-block: 10px;
+    justify-content: space-between;
+  
+    & :is(.hambar, .cross) {
+        display: none;
+        cursor: pointer;
+        transition: all 0.3 linear;
+        & i {
+            font-size: x-large;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+  
+    & .logo > a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--theme-alter-color);
+    }
+  
+    & .nav-bar {
+        text-align: center;
+        & .nav-list {
+            padding: 0;
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+  
+            & .active-link {
+                filter: brightness(50%);
+            }
+  
+            & .nav-item {
+                & a {
+                    text-decoration: none;
+                    color: var(--theme-alter-color);
+                    font-weight: 500;
+                }
+                & :hover {
+                    filter: brightness(50%);
+                }
+            }
+        }
+        transition: all 0.5s ease-in-out;
+    }
+  
+    & .profile-section {
+        padding-block: 5px;
+        padding-inline: 10px;
+        border-radius: 1.5rem;
+        color: var(--bg-color);
+        background-color: var(--theme-alter-color);
+  
+        & > * {
+            color: inherit;
+        }
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .header {
+        padding-inline: 4rem;
+        padding-block: 0.5rem;
+  
+        & .profile-section {
+            & .profile-name {
+                display: none;
+            }
+        }
+  
+        & .logo > a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--theme-alter-color);
+        }
+  
+        & .nav-bar {
+            & .nav-list {
+                gap: 0.8rem;
+            }
+        }
+    }
+  }
+  
+  
+  @media screen and (max-width: 530px) {
+    .header {
+        justify-content: space-between;
+        gap: 10px;
+  
+        & .profile-section {
+            margin-left: auto;
+        }
+  
+        & .nav-bar {
+            display: none;
+        }
+  
+        & .hambar,
+        .cross {
+            display: block;
+        }
+  
+        & .cross {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+  
+            & i {
+                color: white;
+  
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+  
+        & .nav-active {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 33%;
+            min-height: 100vh;
+            width: 50%;
+            z-index: 1000;
+            background-color: var(--theme-alter-color);
+  
+            & .nav-list {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                gap: 1rem;
+  
+                & .active-link {
+                    filter: brightness(80%);
+                }
+  
+                & .nav-item {
+                    & a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 500;
+                    }
+                    & :hover {
+                        filter: brightness(50%);
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+  /* Earth image */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.home {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+img {
+    height: 85vh;
+    width: 98vw;
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        font-size: 1.5em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    img {
+        height: 85vh;
+        width: 98vw;
+    }
+}
+
+
