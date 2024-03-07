@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="/">LOGO</a>
+      </div>
+      <nav class="nav-bar">
+        <div class="cross">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="#">Services</a></li>
+        </ul>
+      </nav>
+      <section class="profile-section">
+        <i class="fa-solid fa-user"></i>
+        <span class="profile-name">name</span>
+      </section>
+      <div class="hambar">
+        <i class="fa-solid fa-bars" style="color: black;"></i>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <script>
+      const hambar = document.querySelector(".hambar");
+      const cross = document.querySelector(".cross");
+      const overlay = document.querySelector(".overlay");
+      const navBar = document.querySelector('.nav-bar')
+
+      hambar.addEventListener("click", () => {
+        navBar.classList.add("nav-active");
+        overlay.style.display = "block";
+        document.documentElement.style.overflow = "hidden";
+      });
+
+      cross.addEventListener("click", () => {
+        if (navBar.classList.contains("nav-active")) {
+          navBar.classList.remove("nav-active");
+          overlay.style.display = "none";
+          document.documentElement.style.overflow = "auto";
+        }
+      });
+    </script>
+    <div class="home">
+        <div class="overlay">
+            <h1>Unlock Your Potential !!</h1>
+            <h3>Join Our Vibrant Community Today And Unlock A World of</h3>
+            <h3>Academic Possibilities!</h3>
+        </div>
+        <img src="landing page-1.jpg" alt="Landing Page Image">
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+          <div class="footer-col">
+            <ul style="list-style-type: disc">
+              <li><a href="#">Customer Services</a></li>
+              <li><a href="#">GIVE US FEEDBACK</a></li>
+              <li><a href="#">MANAGE SUBSCRIPTION</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul style="list-style-type: disc">
+              <li><a class="skill" href="#">About</a></li>
+              <li><a class="skill" href="#">Contact Us</a></li>
+              <li><a href="#">Services </a></li>
+              <li><a href="#">Home </a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4 style="color: white">FOLLOW US ON</h4>
+            <div class="social-links">
+              <a href="#"
+                ><i class="fab fa-facebook-f" style="color: white"></i
+              ></a>
+              <a href="#"><i class="fab fa-twitter" style="color: white"></i></a>
+              <a href="#"
+                ><i class="fab fa-instagram" style="color: white"></i
+              ></a>
+              <a href="#"
+                ><i class="fab fa-linkedin-in" style="color: white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <h3 id="last">&copy 2024 ---- | ALL RIGHTS RESERVED</h3>
+      </footer>
+  </body>
+</html>
